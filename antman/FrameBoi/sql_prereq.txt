@@ -1,0 +1,27 @@
+create table medium_level(
+	level_id int not null auto_increment,
+    back_img varchar(200) not null,
+    temp_img varchar(5000) not null,
+    positions varchar(5000) not null,
+    primary key(level_id)
+);
+
+create table easy_level(
+	level_id int not null auto_increment,
+    back_img varchar(200) not null,
+    temp_img varchar(5000) not null,
+    positions varchar(5000) not null,
+    primary key(level_id)
+);
+
+create table hard_level(
+	level_id int not null auto_increment,
+    back_img varchar(200) not null,
+    temp_img varchar(5000) not null,
+    positions varchar(5000) not null,
+    primary key(level_id)
+);
+
+insert into hard_level values(1, 'dragonTreasure(1).jpg', 'panties.png;key.png;bra.png;water.png', '99,204;398,357;87,338;535,250');
+insert into medium_level values(1, 'bedroom.png', 'panties.png;coins(1).png;bra.png;water.png', '110,232;362,394;73,353;535,250');
+insert into easy_level values(1, 'mystery_easy.jpg', 'hand-bag(1).png;key.png;bra.png;water.png', '110,232;362,394;73,353;530,250');
